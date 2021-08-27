@@ -1,0 +1,23 @@
+{
+  "name": "first_app",
+  "version": "0.1.0",
+  "description": "Aplicação dos conhecimentos obtidos na disciplina de Autoração Multimídia II, proposta pelo professor Wellington Wagner.\r ## Autoria\r Isadora Bruno\r ## Coautores\r Amanda kirbe\r Del\r Nescauzinho\r Jujuba, que dormiu na minha cama o processo inteiro",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DawnBits/first_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DawnBits/first_app/issues"
+  },
+  "homepage": "https://github.com/DawnBits/first_app#readme"
+}

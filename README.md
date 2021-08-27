@@ -3,7 +3,4 @@ Aplicação dos conhecimentos obtidos na disciplina de Autoração Multimídia I
 ## Autoria
 Isadora Bruno
 ## Coautores
-Amanda kirbe
-Del
-Nescauzinho
-Jujuba, que dormiu na minha cama o processo inteiro
+Amanda Ribeiro de Lima (kirbe)

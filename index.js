@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const routes = require("./routes");
 
-const port = 3000;
+const port = 3030;
 const address="localhost";
 
 app.use('/',routes);

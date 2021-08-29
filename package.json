@@ -4,7 +4,9 @@
   "description": "Aplicação dos conhecimentos obtidos na disciplina de Autoração Multimídia II, proposta pelo professor Wellington Wagner.\r ## Autoria\r Isadora Bruno\r ## Coautores\r Amanda kirbe\r Del\r Nescauzinho\r Jujuba, que dormiu na minha cama o processo inteiro",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1"
   },
   "devDependencies": {},
   "scripts": {

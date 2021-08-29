@@ -3,4 +3,4 @@ Aplicação dos conhecimentos obtidos na disciplina de Autoração Multimídia I
 ## Autoria
 Isadora Bruno
 ## Coautores
-Amanda Ribeiro de Lima (kirbe), Mattheus Del Vianple Curacy Oliveira
+Amanda Ribeiro de Lima, Mattheus Del Vianple Curacy Oliveira, Wellington W. F. Sarmento

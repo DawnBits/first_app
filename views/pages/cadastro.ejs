@@ -1,12 +1,35 @@
 <%- contentFor( 'body') %>
 
-<div class="table-responsive-xl ">
+<div class="jumbotron">
     <h2>Usuários Cadastrados</h2>
     <p>Lista de usuários Cadastrados no sistema.</p>            
-    <table class="table table-hover bg-light" id="list">
-    </div>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Email</th>
+            <th>Nascimento</th>
+            <th>Altura</th>
+            <th>Vota?</th>
+            <th>Ação</th>
+        </tr>
+        </thead>
+        <tbody>
 
-    <div class="table-responsive-x1">
-        <h3>Usuários Cadastrados</h3>
-        <p>Lista de usuários cadastrados no sistema.</p>
-    </div>
+            <% for(let index=0;index<users.length;index++){ %>
+                <tr>
+                    
+                <td><%= users[index].name %></td>
+                <td><%= users[index].email %></td>
+                <td><%= users[index].address %></td>
+                <td><%= users[index].birthday %></td>
+                <td><%= users[index].height %></td>
+                <td><%= users[index].vote %></td>
+                <td><a href="X"><i class="fas fa-pen"></i></a></td>
+                <td><a href="X"><i class="fas fa-trash-alt"></i></a></td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</div>

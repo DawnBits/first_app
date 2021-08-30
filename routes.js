@@ -21,23 +21,23 @@ http://localhost:3030/index.html
 
 
 //Req é um objeto que recebe dados da requisição HTTP feita (request). Res permite enviar uma resposta ao navegador (Response)
-router.get('/',(req,res)=>{ //callback - funcao que trata dado evento GET
+router.get('/',(req,res)=>{
     res.render('pages/home');
 });
 
-router.get('/about',(req,res)=>{ //callback - funcao que trata dado evento  GET
-
+router.get('/about',(req,res)=>{
     res.render('pages/about');
 });
 
-router.get('/cadastro',(req,res)=>{ //callback - funcao que trata dado evento  GET
+router.get('/cadastro',(req,res)=>{
 
-    //a funcao render pode receber um pametro na forma de objeto literal
-    //no caso, ela irá receber um objeto com campo chamado users e com valor igual ao vetor users
-    res.render('pages/cadastro',{users:users}); 
+    let users = [{name:"Hajime Hinata", address:"Av. Izuru Kamukura, 77",email:"sem_talento@gaymail.com",birthday: "01/01", height: 1.79, vote: true},{name:"Kaeya Alberich", address:"Rua João Barbatos, 34",email:"ficafrio41@gaymail.com",birthday: "30/11", height: 1.82, vote: true},{name:"Nagito Komaeda", address:"Rua da Esperança, 100",email:"garoto_s0rtudo@gaymail.com",birthday: "28/04", height: 1.80, vote: true},{name:"Shinji Ikari", address:"Avenida dos Anjos, 05",email:"terceira_crianca@gaymail.com",birthday: "06/06", height: 1.44, vote: false},{name:"Byakuya Togami", address:"Avenida das Mulheres Ricas, 30",email:"melhorquevc@gaymail.com",birthday: "05/05", height: 1.85, vote: true},{name:"Misato Katsuragi", address:"Avenida dos Anjos, 05",email:"gatinhabraba@gaymail.com",birthday: "08/12", height: 1.62, vote: true}];
+
+    res.render('pages/cadastro', {users:users}); 
+
 });
 
-router.post('/cadastro/remove',(req,res)=>{
+/*router.post('/cadastro/remove',(req,res)=>{
     //let item =req.body.id; //pega o valor passado através do parâmetro id e atribui a variável item. 
     let name = req.body.name;
 
@@ -97,7 +97,7 @@ router.post('/cadastro/update',(req,res)=>{
 router.get('/cadastro/list',(req,res)=>{
     //Para fazer em casa: Como seria uma rotina para listar todos os itens cadastrados?
 
-});
+}); */
 
 /*router.post('/cadastro/add',(req,res)=>{
     let user={name:"",email:"",address:"",heigth:"",age:"",vote:""};

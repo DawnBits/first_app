@@ -22,11 +22,16 @@ function validaUpdate(data){
         return false;
     }
 
-    if (!Number.isInteger(Number(data[3].value))&&(Number(data[3].value>0))){
-        alert("A idade deve ser um valor inteiro e positivo!");
+    let parts = data[3].value.split("-");
+    let year = parseInt(parts[0], 10);
+    let month = parseInt(parts[1], 10);
+    if((year < 1900 || year > 2003) || ( year == 2003 && month > 9)){
+        alert("Data de nascimento inválida.");
         data[3].focus();
         return false;
+
     }
+
     return true;
     
     
@@ -67,11 +72,6 @@ function validaForm(data){
         return false;
     }
 
-    if (data._birthday.value == "") {
-        alert("Nenhuma data foi digitada.");
-        data._birthday.focus();
-        return false;
-    }
 
     if (data._height.value == "") {
         alert("Nenhuma altura foi digitada, verifique o campo Altura e tente novamente.");
@@ -83,6 +83,23 @@ function validaForm(data){
         alert("Valor inválido para altura, verifique o campo Altura e tente novamente.");
         data._height.focus();
         return false;
+    }
+
+    if (data._birthday.value == "") {
+        alert("Nenhuma data foi digitada.");
+        data._birthday.focus();
+        return false;
+    }
+
+    let parts = data._birthday.value.split("-");
+    let year = parseInt(parts[0], 10);
+    let month = parseInt(parts[1], 10);
+    let day = parseInt(parts[2],10);
+    if((year < 1900 || year > 2003) || ( year == 2003 && month > 9)){
+        alert("Data de nascimento inválida, verifique se a data está correta e tente novamente.");
+        data._birthday.focus();
+        return false;
+
     }
 
     return true;

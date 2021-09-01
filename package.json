@@ -1,25 +1,33 @@
 {
-  "name": "first_app",
+  "name": "first-app",
   "version": "0.1.0",
-  "description": "Aplicação dos conhecimentos obtidos na disciplina de Autoração Multimídia II, proposta pelo professor Wellington Wagner.\r ## Autoria\r Isadora Bruno\r ## Coautores\r Amanda kirbe\r Del\r Nescauzinho\r Jujuba, que dormiu na minha cama o processo inteiro",
+  "description": "Aplicação base em node.js",
   "main": "index.js",
-  "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "express-ejs-layouts": "^2.5.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DawnBits/first_app.git"
+    "url": "git+https://github.com/wwagner33/first-app2.git"
   },
-  "author": "Isadora Bruno",
-  "license": "ISC",
+  "keywords": [
+    "node.js",
+    "express",
+    "ejs",
+    "express-ejs-layout"
+  ],
+  "author": "Wellington Wagner F. Sarmento",
+  "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/DawnBits/first_app/issues"
+    "url": "https://github.com/wwagner33/first-app2/issues"
   },
-  "homepage": "https://github.com/DawnBits/first_app#readme"
+  "homepage": "https://github.com/wwagner33/first-app2#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "faker": "^5.5.3"
+  }
 }

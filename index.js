@@ -30,7 +30,14 @@ let toggleBol=true;
 //     {name:"Wellington W. F. Sarmento",address:"Rua Dom Jeronimo, 666",email:"wwagner@virtual.ufc.br",age:46,heigth:1.70,vote:true},
 //     {name:"Patricia S. Paula",address:"Rua Dom Jeronimo, 666",email:"patricia@virtual.ufc.br",age:46,heigth:1.70,vote:true},ß
 //     {name:"Henrique Sérgio L. Pequeno",address:"Rua do Henrique, 666",email:"henrique@virtual.ufc.br",age:46,heigth:1.70,vote:true}];
-global.users =[];
+global.users =[
+    {name:"Hajime Hinata", address:"Av. Izuru Kamukura, 77",email:"sem_talento@email.com",birthday: "01/01", height: 1.79, vote: true},
+    {name:"Kaeya Alberich", address:"Rua João Barbatos, 34",email:"ficafrio41@email.com",birthday: "30/11", height: 1.82, vote: true},
+    {name:"Nagito Komaeda", address:"Rua da Esperança, 100",email:"garoto_s0rtudo@email.com",birthday: "28/04", height: "1.80", vote: true},
+    {name:"Shinji Ikari", address:"Avenida dos Anjos, 05",email:"terceira_crianca@email.com",birthday: "06/06", height: 1.44, vote: false},
+    {name:"Byakuya Togami", address:"Avenida das Mulheres Ricas, 30",email:"melhorquevc@email.com",birthday: "05/05", height: 1.85, vote: true},
+    {name:"Misato Katsuragi", address:"Avenida dos Anjos, 05",email:"gatinhabraba@email.com",birthday: "08/12", height: 1.62, vote: true}
+];
 
 //ativa uso do EJS e do Express-ejs-layouts
 app.set('view engine','ejs');
